@@ -124,7 +124,7 @@ main {
     font-size: 28px;
   } 
 
-.grilla-productos {
+.grilla-discografia {
     display: flex;
     flex-wrap: wrap;          /* si no entran, pasan a la fila de abajo */
     gap: 25px;                /* separacion entre cards */
