@@ -76,7 +76,7 @@ header {
      ============================================================ */
 .hero {
     background: #352720;
-    color: white;
+        color: white;
     text-align: center;
     padding: 60px 20px;
   }
@@ -272,7 +272,12 @@ footer {
      Otro flex: datos a un lado y el mapa al otro.
      Con flex-wrap, en celular el mapa baja abajo de los datos.
      ============================================================ */
-.bloque-contacto {
+  .formulario-contacto {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .bloque-contacto {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" >
+
+</head>
+<body>
+
+<header>
+  <div class="contenedor barra-nav">
+    <div class="logo">Michael<span>Jackson</span> Fan Page</div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="discografias.html">Discografia</a></li>
+        <li><a href="videollamada.html">Conoce a Michael</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+<h2>Formularios</h2>
+
+        <form action="aws.xx.asa.saas/ingreso.php" method="post">
+            <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                    <label for="dni">DNI</label>
+                    <input type="text"  name="dni" id="dni"  placeholder="12345678" readonly>
+            </p>
+            
+            <p>
+                <label for="nomApe">Nombre y Apellido</label>
+                <input type="text" id="nomApe" name="nomApe" placeholder="Emmanuel Artigas" minlength="3" maxlength="40" required>
+            </p>
+            <p>
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email" placeholder="EmmanuelArtigas@gmail.com" minlength="3" required>
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="00-00000000" minlength="10" maxlength="40" required>
+            </p>
+            <p>
+                <label for="fNac">Fecha de Nacimiento</label>
+                <input type="date" id="fNac" name="fNac" required>
+            </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Consultas</legend>
+                <label for="motivo">Motivo :</label>
+                <select name="motivo" id="motivo" required>
+                    <option value="biografias">Biografias</option>
+                    <option value="videollamada">Videollamada</option>
+                    <option value="noDebito">No me toma la tarjeta de debito</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Modo de Contacto</legend>
+                <input type="radio" id="viaTel" name="contacto" value="tel">
+                <label for="viaTel">Telefono</label>
+                <input type="radio" id="viaMail" name="contacto" value="email">
+                <label for="viaMail">Mail</label>
+
+            </fieldset>
+
+             <input type="checkbox"  id="terminos" name="terminos" required value="aceptado" >
+                    <label for="terminos">Terminos y cond.</label>
+
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+
+            
+        </form>
+
+
+</body>
+</html>
